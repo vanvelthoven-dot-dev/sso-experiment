@@ -20,8 +20,8 @@ scutil --dns
 
 ```bash
 # Generate pem files for SSL
-mkcert -cert-file certs/cert.pem -key-file certs/cert-key.pem "*.foobar.test"
-openssl dhparam -out certs/dhparam.pem 2048
+mkcert -cert-file proxy/certs/cert.pem -key-file proxy/certs/cert-key.pem "*.foobar.test"
+openssl dhparam -out proxy/certs/dhparam.pem 2048
 
 # Update `NEXTAUTH_SECRET` in the `.env` files. Generate secrets using:
 openssl rand -base64 32
