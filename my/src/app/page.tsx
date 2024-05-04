@@ -4,7 +4,7 @@ const Home = async () => {
 
   const session = await authServerSession();
 
-  if (session) {
+  if (session && session.user) {
     return (
       <main className="min-h-screen flex flex-col">
         <header className="h-24 bg-gray-800 flex justify-center items-center">

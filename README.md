@@ -37,5 +37,13 @@ cd ./go && npm run dev
 cd ./my && npm run dev
 docker compose up -d
 
-# Update `ZITADEL_CLIENTID` in the `.env` files after setting up OIDC with PKCE. 
+# https://zitadel.foobar.test
+# Initial login: zitadel-admin@zitadel.zitadel.foobar.test, Password1!
+
+# Create projects and applications with callbacks:
+# https://my.foobar.test/api/auth/callback/foobar & https://go.foobar.test/api/auth/callback/foobar
+# Enable "User roles inside ID Token" and "User Info inside ID Token" 
+
+# Update `ZITADEL_CLIENTID` in the `.env` files after setting up OIDC with PKCE.
+
 ```
