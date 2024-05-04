@@ -1,0 +1,17 @@
+.DS_Store
+
+# Project files
+.idea/
+
+ # Build files
+.next/
+node_modules/
+
+# Data folders
+data/
+!data/.gitkeep
+*.log
+
+# Folder for generated PEM files
+certs/
+!certs/.gitkeep
