@@ -9,18 +9,19 @@ const Home = () => {
     return (
       <main className="h-screen flex flex-col items-center justify-center">
         <div className="p-6">
-          Hello {session.data.user?.name}
+          Hello &quot;<span className="font-bold">{session.data.user?.name}</span>&quot; from the GO app
         </div>
       </main>
     );
   }
 
+  // Automatically going into the sign-in flow ...
   signIn("foobar");
 
   return (
     <main className="h-screen flex flex-col items-center justify-center">
       <div className="p-6">
-        ...
+        Not logged in in the GO app
       </div>
     </main>
   )
